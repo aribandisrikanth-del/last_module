@@ -1,0 +1,21 @@
+from tkinter import *
+window=Tk()
+window.title("denomination calculator")
+window.geometry("400x300")
+name_lbl=Label(text="total value",bg="#3895D3")
+number_entry=Entry()
+def display():
+    name=int(number_entry.get())/int(number_entry2.get())
+    global Message
+    text_box.insert(END,name)
+number_entry2=Entry()
+text_box=Text(height=3)
+bnt=Button(text="confirm",command=display,height=1,bg="#1261A0",fg="white")
+lbl2=Label(text="type of note",height=1,bg="#1261A0")
+name_lbl.pack()
+number_entry.pack()
+lbl2.pack()
+number_entry2.pack()
+bnt.pack()
+text_box.pack()
+window.mainloop()
